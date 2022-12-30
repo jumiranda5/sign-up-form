@@ -1,3 +1,22 @@
-body {
-    background-color: lightgray;
+:root {
+    --logo-section-width: 33vw;
+}
+
+/* SECTIONS */
+
+.logo-section,
+.form-section {
+    position: absolute;
+    height: 100vh;
+}
+
+.logo-section {
+    width: var(--logo-section-width);
+    background-color: grey;
+}
+
+.form-section {
+    left: var(--logo-section-width);
+    width: calc(100vw - var(--logo-section-width));
+    background-color: antiquewhite;
 }
