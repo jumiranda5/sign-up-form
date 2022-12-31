@@ -5,6 +5,7 @@
 
 :root {
     --logo-section-width: 33vw;
+    --error-color: #ef3232;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -26,16 +27,20 @@
 .form-section {
     left: var(--logo-section-width);
     width: calc(100vw - var(--logo-section-width));
-    background-color: antiquewhite;
+    background-color: #f4f4f4;
+}
+
+.logo-container,
+.form-section {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 /* LOGO SECTION */
 
 .logo-container {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
     height: 120px;
     margin-top: 24vh;
     background: #00000080;
@@ -64,4 +69,91 @@
     bottom: 16px;
     text-align: center;
     width: 100%;
+}
+
+/* FORM SECTION */
+
+.description,
+form h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.description {
+    width: 80%;
+    max-width: 600px;
+    line-height: 24px;
+    padding: 0 60px;
+}
+
+.description em {
+    font-style: italic;
+}
+
+form {
+    margin-top: 40px;
+}
+
+fieldset {
+    padding: 24px 60px;
+    background-color: #FFFFFF;
+    box-shadow: 0 8px 12px #00000020;
+}
+
+.inputs-container {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 16px;
+}
+
+.inputs-container > div {
+    width: 49%;
+}
+
+.inputs-container > div > * {
+    display: block;
+}
+
+label {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 4px;
+    letter-spacing: 2px;
+}
+
+input {
+    width: 80%;
+    height: 28px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+}
+
+.error-msg {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 4px;
+    color: var(--error-color);
+}
+
+.btn-submit {
+    margin: 40px 60px;
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 6px;
+    background-color: #016c48;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.login {
+    margin-left: 60px;
+    font-weight: 500;
+}
+
+.login a,
+.login a:visited {
+    color: #016c48;
+    text-decoration: none;
 }

@@ -27,39 +27,70 @@
         </div>
 
         <div class="form-section">
-            <p>
-                This is not a real online service! You know you need something like this in your life 
-                to help you realize your deepest dreams. Sign up now to get started.
-                <br>
-                <br>
-                You know you want to.
-            </p>
 
-            <form action="POST">
+            <div class="form-container">
+                <p class="description">
+                    This is not a real online service! You know you need something like this in your life 
+                    to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+                    <br>
+                    <br>
+                    You know you want to.
+                </p>
+    
+                <form action="POST">
 
-                <label for="first-name">FIRST NAME</label>
-                <input id="first-name" type="text">
+                    <fieldset>
+                        <h2>Let's do this!</h2>
 
-                <label for="last-name">LAST NAME</label>
-                <input id="last-name" type="text">
+                        <div class="inputs-container">
 
-                <label for="email">EMAIL</label>
-                <input id="email" type="email">
+                            <div>
+                                <label for="first-name">FIRST NAME</label>
+                                <input id="first-name" type="text">
+                                <p class="error-msg">Error message</p>
+                            </div>
 
-                <label for="phone">PHONE NUMBER</label>
-                <input id="phone" type="text">
+                            <div>
+                                <label for="last-name">LAST NAME</label>
+                                <input id="last-name" type="text">
+                                <p class="error-msg">Error message</p>
+                            </div>
+                                
+                            <div>
+                                <label for="email">EMAIL</label>
+                                <input id="email" type="email">
+                                <p class="error-msg">Error message</p>
+                            </div>
 
-                <label for="password">PASSWORD</label>
-                <input id="password" type="password">
+                            <div>
+                                <label for="phone">PHONE NUMBER</label>
+                                <input id="phone" type="text">
+                                <p class="error-msg">Error message</p>                            
+                            </div>
 
-                <label for="confirm-password">CONFIRM PASSWORD</label>
-                <input id="confirm-password" type="password">
+                            <div>
+                                <label for="password">PASSWORD</label>
+                                <input id="password" type="password">
+                                <p class="error-msg">Error message</p>
+                            </div>
 
-                <button>Create Account</button>
+                            <div>
+                                <label for="confirm-password">CONFIRM PASSWORD</label>
+                                <input id="confirm-password" type="password">
+                                <p class="error-msg">Error message</p>
+                            </div>
+      
+                        </div>
 
-            </form>
+                    </fieldset>
+    
+                    <button class="btn-submit">Create Account</button>
+    
+                </form>
+    
+                <p class="login">Already have an account? <a href="#">Log in</a></p>
+            </div>
 
-            <p>Already have an account <a href="#">Log in</a></p>
         </div>
     
     </body>
