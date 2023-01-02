@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/styles.css">
+        <script src="script.js" defer></script>
         <title>Sign Up Form</title>
     </head>
     <body>
@@ -37,7 +38,7 @@
                     You know you want to.
                 </p>
     
-                <form action="POST">
+                <form action="#" id="form" method="POST">
 
                     <fieldset>
                         <h2>Let's do this!</h2>
@@ -46,45 +47,45 @@
 
                             <div>
                                 <label for="first-name">FIRST NAME</label>
-                                <input id="first-name" type="text">
-                                <p class="error-msg">Error message</p>
+                                <input id="first-name" placeholder="John" type="text" required>
                             </div>
 
                             <div>
                                 <label for="last-name">LAST NAME</label>
-                                <input id="last-name" type="text">
-                                <p class="error-msg">Error message</p>
+                                <input id="last-name" placeholder="Doe" type="text" required>
                             </div>
                                 
                             <div>
                                 <label for="email">EMAIL</label>
-                                <input id="email" type="email">
-                                <p class="error-msg">Error message</p>
+                                <input id="email" placeholder="example@email.com" type="email" required>
                             </div>
 
                             <div>
                                 <label for="phone">PHONE NUMBER</label>
-                                <input id="phone" type="text">
-                                <p class="error-msg">Error message</p>                            
+                                <input id="phone" 
+                                    placeholder="999-999-9999" 
+                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                    title="Please enter a valid phone number, example: 123-456-7899" 
+                                    type="tel"
+                                    required>                            
                             </div>
 
                             <div>
                                 <label for="password">PASSWORD</label>
-                                <input id="password" type="password">
-                                <p class="error-msg">Error message</p>
+                                <input id="password" type="password" required>
                             </div>
 
                             <div>
                                 <label for="confirm-password">CONFIRM PASSWORD</label>
-                                <input id="confirm-password" type="password">
-                                <p class="error-msg">Error message</p>
+                                <input id="confirm-password" type="password" required>
+                                <p id="error-msg" class="error-msg"></p>
                             </div>
       
                         </div>
 
                     </fieldset>
     
-                    <button class="btn-submit">Create Account</button>
+                    <button id="submit" class="btn-submit">Create Account</button>
     
                 </form>
     

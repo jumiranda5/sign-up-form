@@ -124,9 +124,25 @@ label {
 
 input {
     width: 80%;
-    height: 28px;
+    padding: 10px;
     border: 1px solid #cccccc;
     border-radius: 6px;
+    outline: none;
+}
+
+input:focus {
+    border: 1px solid #4b70e0;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+input:valid {
+    border: 1px solid #22dc6f;
+    background-color: #8affbb;
+}
+
+input.error {
+    border: 1px solid var(--error-color);
+    background-color: #fbc9c9;
 }
 
 .error-msg {
